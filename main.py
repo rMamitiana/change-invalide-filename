@@ -6,9 +6,16 @@ import sys
 list = []
 PATH = './dir1/'
 reg_ex = r'[0-9_:]'
+
+'''
+Get all directories, subdirectories and files in the toChange directory to list
+'''
 for root, dirs, files in os.walk(PATH):
     list.append([root, dirs, files])
 
+'''
+loop through the list, from the end to the first
+'''
 length = len(list)
 for i in range(0, length):
     level = list[length-(i+1)]
