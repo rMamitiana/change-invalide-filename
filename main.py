@@ -52,6 +52,6 @@ for i in range(0, length):
     print("\n ============================================= \n")
 
 if error == 0:
-    print("Operations finished succefully !")
+    print("Operations finished succefully !\n")
 else:
-    print("Operations finished with ", error , " errros !")
+    print("Operations finished with ", error , " errros !\n")
